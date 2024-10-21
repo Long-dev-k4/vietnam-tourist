@@ -1,0 +1,182 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f7f7f7;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a58e0;
+    padding: 10px 20px;
+    position: fixed; /* Make the header fixed */
+    top: 0;          /* Position it at the top */
+    left: 0;         /* Ensure it starts from the left */
+    width: 100%;     /* Take the full width of the viewport */
+    z-index: 1000;   /* Make sure it stays on top of other elements */
+}
+
+header .logo {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Logo */
+header .logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Add this padding to avoid content being hidden under the header */
+body {
+    padding-top: 80px; /* Adjust based on header height */
+    /* other styles */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #2a58e0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #1d3fa3;
+}
+
+.search-bar button i {
+    font-size: 16px;
+}
+
+
+/* Đăng nhập */
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px); /* Chiều cao 100% trừ chiều cao header và footer */
+}
+
+.login-form {
+    background: white;
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Set a maximum width for the form */
+    margin: 0 20px; /* Add margin for responsiveness */
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #0056b3; /* Màu hover cho nút */
+}
+
+.login-form p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Social Icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff9900; /* Change color on hover */
+}

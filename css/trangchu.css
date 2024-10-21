@@ -1,0 +1,251 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f7f7f7;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a58e0;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Logo */
+header .logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Add this padding to avoid content being hidden under the header */
+body {
+    padding-top: 80px; /* Adjust based on header height */
+    /* other styles */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #2a58e0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #1d3fa3;
+}
+
+.search-bar button i {
+    font-size: 16px;
+}
+/* Slider Section */
+#slider {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    border-bottom: 2px solid #000;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.aspect-ratio-169 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.aspect-ratio-169 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Dot Container */
+.dot-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.dot {
+    height: 16px;
+    width: 16px;
+    background-color: #a3a0a0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+/* Hero section content */
+.hero-content {
+    z-index: 2; /* Ensure content is above the overlay */
+    padding: 20px; /* Add padding for better spacing */
+    text-align: center; /* Center-align text content */
+    position: relative; /* Relative positioning for proper z-index usage */
+}
+
+/* Heading style */
+h1 {
+    font-size: 48px;
+    margin: 10px 0; /* Adjust margin for spacing */
+    transition: transform 0.3s ease; /* Animation for scaling */
+}
+
+.hero-content h1:hover {
+    transform: scale(1.05); /* Slightly enlarge the heading on hover */
+}
+
+/* Button style */
+button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for scale */
+    margin-top: 10px; /* Add margin above the button */
+}
+
+.hero button:hover {
+    background-color: #cc7a00; /* Darken background on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+
+/* Dịch vụ */
+#services {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+#services h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+.service {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 300px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff9900; /* Change color on hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+}

@@ -1,0 +1,172 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f7f7f7;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a58e0;
+    padding: 10px 20px;
+    position: fixed; /* Make the header fixed */
+    top: 0;          /* Position it at the top */
+    left: 0;         /* Ensure it starts from the left */
+    width: 100%;     /* Take the full width of the viewport */
+    z-index: 1000;   /* Make sure it stays on top of other elements */
+}
+
+header .logo {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Logo */
+header .logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Add this padding to avoid content being hidden under the header */
+body {
+    padding-top: 80px; /* Adjust based on header height */
+    /* other styles */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #2a58e0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #1d3fa3;
+}
+
+.search-bar button i {
+    font-size: 16px;
+}
+
+main {
+    padding: 20px;
+    font-size: 1.2em; /* Increase font size */
+}
+
+#hotel-details {
+    text-align: center;
+}
+
+.room-option {
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: white;
+}
+
+.room-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.room-option h4 {
+    margin: 0;
+}
+
+.book-room {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.book-room:hover {
+    background-color: #218838;
+}
+
+/* Remove dots from lists */
+ul {
+    list-style-type: none;
+}
+
+#service-quality {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+/* Social Icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff9900; /* Change color on hover */
+}

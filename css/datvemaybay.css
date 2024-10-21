@@ -1,0 +1,201 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f7f7f7;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a58e0;
+    padding: 10px 20px;
+    position: fixed; /* Make the header fixed */
+    top: 0;          /* Position it at the top */
+    left: 0;         /* Ensure it starts from the left */
+    width: 100%;     /* Take the full width of the viewport */
+    z-index: 1000;   /* Make sure it stays on top of other elements */
+}
+
+header .logo {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Logo */
+header .logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Add this padding to avoid content being hidden under the header */
+body {
+    padding-top: 80px; /* Adjust based on header height */
+    /* other styles */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #2a58e0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #1d3fa3;
+}
+
+.search-bar button i {
+    font-size: 16px;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Giữ cho nút chiếm 100% chiều rộng của khối */
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Tạo khoảng cách giữa các nút */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Thay đổi màu cho nút Check In */
+#check-in {
+    background-color: #007bff; /* Màu xanh dương cho nút Check In */
+}
+
+#check-in:hover {
+    background-color: #0056b3; /* Màu tối hơn khi hover */
+}
+
+/* Thay đổi màu cho nút Quay Lại */
+#go-back {
+    background-color: #dc3545; /* Màu đỏ cho nút Quay Lại */
+}
+
+#go-back:hover {
+    background-color: #c82333; /* Màu tối hơn khi hover */
+}
+
+/* Tạo khối chứa hai nút */
+.button-group {
+    display: flex; /* Sử dụng Flexbox để căn chỉnh */
+    justify-content: space-between; /* Căn chỉnh khoảng cách giữa hai nút */
+    margin-top: 10px; /* Tạo khoảng cách phía trên */
+}
+
+/* Đảm bảo các nút không chiếm hết chiều rộng */
+.button-group button {
+    width: 48%; /* Giảm chiều rộng của nút xuống một chút */
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+/* Social Icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff9900; /* Change color on hover */
+}

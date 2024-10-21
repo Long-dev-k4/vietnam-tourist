@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check In - Đặt Vé Máy Bay</title>
+    <link rel="icon" href="image/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/checkin.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="trangchu.html"><img src="image/logo.png" alt="Logo Công Ty Du Lịch" width="120"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="trangchu.html">Trang chủ</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="dichvu.html">Dịch vụ</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+                <li><a href="dangnhap.html">Đăng nhập</a></li>
+                <li><a href="dangki.html">Đăng ký</a></li>
+            </ul>
+        </nav>
+        <!-- Search bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm...">
+            <button><i class="fas fa-search"></i></button> <!-- Search icon -->
+        </div>
+    </header>
+
+    <main>
+        <section id="checkin-info">
+            <h2>Check In - Đặt Vé Máy Bay</h2>
+            <p>Chúng tôi cung cấp nhiều loại vé máy bay với bảng giá tốt nhất cho bạn lựa chọn.</p>
+        </section>
+
+        <section id="ticket-types">
+            <h3>Các loại vé máy bay</h3>
+            <div class="ticket-option">
+                <h4>Vé Phổ Thông</h4>
+                <p>Giá: 1.500.000 VNĐ</p>
+                <p>Đặc điểm: Hành lý 20kg, ghế ngồi thoải mái, dịch vụ ăn uống cơ bản.</p>
+                <button class="select-ticket" data-price="1500000">Chọn Vé</button>
+            </div>
+            <div class="ticket-option">
+                <h4>Vé Thương Gia</h4>
+                <p>Giá: 3.000.000 VNĐ</p>
+                <p>Đặc điểm: Hành lý 30kg, ghế ngồi rộng rãi, dịch vụ ăn uống cao cấp.</p>
+                <button class="select-ticket" data-price="3000000">Chọn Vé</button>
+            </div>
+            <div class="ticket-option">
+                <h4>Vé Hạng Nhất</h4>
+                <p>Giá: 5.000.000 VNĐ</p>
+                <p>Đặc điểm: Hành lý 50kg, ghế ngồi sang trọng, dịch vụ ưu tiên đặc biệt.</p>
+                <button class="select-ticket" data-price="5000000">Chọn Vé</button>
+            </div>
+        </section>
+
+        <section id="price-table">
+            <h3>Bảng giá vé máy bay</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Vé</th>
+                        <th>Giá (VNĐ)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vé Phổ Thông</td>
+                        <td>1.500.000</td>
+                    </tr>
+                    <tr>
+                        <td>Vé Thương Gia</td>
+                        <td>3.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>Vé Hạng Nhất</td>
+                        <td>5.000.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Công Ty Du Lịch Vietnam Tourist. Mọi quyền được bảo lưu.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/checkin.js"></script>
+</body>
+</html>
